@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "TikTok Volume Control",
+    "version": "0.0.1",
+
+    "icons": {
+        "128": "icon128.png"
+    },
+    "description": "Adds a volume control slider to TikTok's web client.",
+
+    "homepage_url": "https://github.com/Sentinent/TikTokVolumeControl",
+
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [ "*://*.tiktok.com/*" ],
+            "js": [ "main.js" ],
+            "css": [ "stylesheet.css" ]
+        }
+    ]    
+}

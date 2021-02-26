@@ -1,0 +1,34 @@
+.item-video-card-wrapper {
+    -webkit-user-drag: none;
+}
+
+.item-video-card-wrapper:hover svg,
+.item-video-card-wrapper:hover .ttvc-volume-slider-feed,
+.video-card-container:hover .ttvc-volume-slider-browse {
+    opacity: 1;
+}
+
+.ttvc-volume-slider-feed,
+.ttvc-volume-slider-browse {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.ttvc-volume-slider-feed {
+    width: 60px;
+    height: 10px;
+    bottom: 55px;
+
+    transform: rotate(-90deg);
+}
+
+.ttvc-volume-slider-browse {
+    width: 80px;
+    height: 10px;
+    left: 50px;
+}
+
+.item-video-card-wrapper svg {
+    opacity: 0;
+}
